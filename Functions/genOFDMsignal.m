@@ -14,6 +14,8 @@
 % transmit. Each element of this vector must be an integral value in the
 % range [1 M]; thus specifying 1 out of M possible QAM symbols for each
 % subcarrier.
+% (M is the number of elements in the 'Symbols' parameter and is 64 by
+% default.)
 %  default: A pseudo-random vector of data of length 1e6 is generated from
 %  a uniform [1 M] distribution to assign to subcarriers.
 % 
