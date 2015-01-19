@@ -1,14 +1,14 @@
-% test script for 'genOFDMsignal' function
+%% test script for 'genOFDMsignal' function
 close all;
 clearvars;
 clc;
 
-% EXAMPLE 1
+%% EXAMPLE 1
 % will generate OFDM signal with default params and save the signal in
 % 'signal.txt' in the current directory
 genOFDMsignal(); 
 
-% EXAMPLE 2
+%% EXAMPLE 2
 dataLen = 20; % length of data to generate
 N = 32;         % # subcarriers
 M = 4;          % M-QAM for each subcarrier
@@ -31,7 +31,7 @@ title('Example ACO-OFDM signal');
 xlabel('time');
 ylabel('signal intensity');
 
-% EXAMPLE 3
+%% EXAMPLE 3
 N = 64; % # subcarriers
 M = 16; % M-QAM for each subcarrier
 getQAMsyms(M); % show the constellation
