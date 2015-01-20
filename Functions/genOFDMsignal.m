@@ -208,7 +208,7 @@ if exist('data','var')
     dataLen = numel(data);  % if data provided, calculate its length
 else
     if exist('seed','var')
-        rand('seed',seed);  % if seed specified, initialize RNG with seed.
+        rng(seed);  % if seed specified, initialize RNG with seed.
     end
     data = randi(M,[dataLen 1]); % if data not provided, randomly generate data
 end
